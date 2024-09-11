@@ -22,6 +22,10 @@ const GlobalStyles = createGlobalStyle`
     text-decoration: underline;
   }
 
+  a:focus {
+    outline: 2px solid #0056b3;
+  }
+
   h1 {
     font-size: 2em;
     margin: 0;
@@ -42,12 +46,44 @@ const GlobalStyles = createGlobalStyle`
     background-color: #0056b3;
   }
 
+  button:focus {
+    outline: 2px solid #0056b3; /* Añadir enfoque visible */
+  }
+
   main {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1em;
+  }
+
+  /* Media Queries para dispositivos móviles */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 1.5em;
+    }
+
+    button {
+      font-size: 0.9em;
+      padding: 0.4em 0.8em;
+    }
+  }
+
+  /* Media Queries para dispositivos de escritorio grandes */
+  @media (min-width: 1200px) {
+    body {
+      font-size: 18px; /* Ajustar fuente para pantallas grandes */
+    }
+
+    h1 {
+      font-size: 2.5em;
+    }
+
+    button {
+      font-size: 1.2em;
+      padding: 0.6em 1.2em;
+    }
   }
 `;
 
