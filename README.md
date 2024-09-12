@@ -1,4 +1,4 @@
-# 🛹💍 Skate Jewelry Store - Frontend 🛍️🛹
+# 🛹💍 Skate Jewelry Store - Frontend (React) 🛍️🛹
 
 ## Table of Contents
 - [📝 Project Description](#project-description)
@@ -48,10 +48,10 @@ We have built an eCommerce web application tailored for the skateboarding world,
 To install and run the project locally, follow these steps:
 
 1. Clone the repository:  
-   `git clone https://github.com/YourUsername/SkateJewelryStore`
+   `git clone https://github.com/ShailaGonzalez/Front-U-Dagger`
 
 2. Navigate to the project directory:  
-   `cd skate-jewelry-store`
+   `cd front-u-dagger`
 
 3. Install dependencies:  
    `npm install`
