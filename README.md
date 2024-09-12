@@ -1,4 +1,4 @@
-# 🛹💍 Skate Jewelry Store - Backend 🛠️🖥️
+# 🛹💍 U!DAGGER - Backend 🛠️🖥️
 
 ## Table of Contents
 - [📝 Project Description](#project-description)
