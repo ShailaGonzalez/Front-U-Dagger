@@ -1,8 +1,98 @@
-// src/pages/ProductManagement.jsx
 import React, { useState, useEffect } from 'react';
 import { useParams, useHistory } from 'react-router-dom';
 import { getProductById, createProduct, updateProduct } from '../services/productService';
-import { ProductFormContainer, FormGroup, Input, Textarea, Button } from '../styles/ProductFormStyles';
+import styled from 'styled-components';
+
+const ProductFormContainer = styled.div`
+  max-width: 600px;
+  margin: auto;
+  padding: 2em;
+
+  @media (max-width: 30em) {
+    padding: 1em;
+  }
+
+  @media (min-width: 30em) and (max-width: 48em) {
+    padding: 1.5em;
+  }
+
+  @media (min-width: 48em) {
+    padding: 2em;
+  }
+`;
+
+const FormGroup = styled.div`
+  margin-bottom: 1em;
+`;
+
+const Input = styled.input`
+  width: 100%;
+  padding: 0.75em;
+  border-radius: 0.25em;
+  border: 1px solid #ccc;
+
+  @media (max-width: 30em) {
+    padding: 0.5em;
+  }
+
+  @media (min-width: 30em) and (max-width: 48em) {
+    padding: 0.75em;
+  }
+
+  @media (min-width: 48em) {
+    padding: 0.75em;
+  }
+`;
+
+const Textarea = styled.textarea`
+  width: 100%;
+  padding: 0.75em;
+  border-radius: 0.25em;
+  border: 1px solid #ccc;
+  resize: vertical;
+
+  @media (max-width: 30em) {
+    padding: 0.5em;
+  }
+
+  @media (min-width: 30em) and (max-width: 48em) {
+    padding: 0.75em;
+  }
+
+  @media (min-width: 48em) {
+    padding: 0.75em;
+  }
+`;
+
+const Button = styled.button`
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 0.25em;
+  padding: 0.75em 1.5em;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 1em;
+
+  &:hover {
+    background-color: #0056b3;
+  }
+
+  @media (max-width: 30em) {
+    padding: 0.5em 1em;
+    font-size: 0.875em;
+  }
+
+  @media (min-width: 30em) and (max-width: 48em) {
+    padding: 0.75em 1.25em;
+    font-size: 1em;
+  }
+
+  @media (min-width: 48em) {
+    padding: 0.75em 1.5em;
+    font-size: 1em;
+  }
+`;
 
 const ProductManagement = () => {
   const { id } = useParams();
@@ -56,7 +146,7 @@ const ProductManagement = () => {
   };
 
   if (loading) return <p>Loading...</p>;
-  if (error) return <p className="error">{error}</p>;
+  if (error) return <p style={{ color: 'red' }}>{error}</p>;
 
   return (
     <ProductFormContainer>

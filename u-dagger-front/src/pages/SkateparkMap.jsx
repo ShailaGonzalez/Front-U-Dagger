@@ -5,18 +5,38 @@ import { getSkateparkById } from '../services/skateparkService';
 import styled from 'styled-components';
 
 const SkateparkMapContainer = styled.div`
-  padding: 20px;
+  padding: 2em;
   max-width: 1200px;
   margin: auto;
+  box-sizing: border-box;
 
-  @media (max-width: 768px) {
-    padding: 10px;
+  @media (max-width: 30em) {
+    padding: 1em;
+  }
+
+  @media (min-width: 30em) and (max-width: 48em) {
+    padding: 1.5em;
+  }
+
+  @media (min-width: 48em) {
+    padding: 2em;
   }
 
   iframe {
     width: 100%;
-    height: 450px;
-    border: none;
+    height: 30em;
+
+    @media (max-width: 30em) {
+      height: 20em;
+    }
+
+    @media (min-width: 30em) and (max-width: 48em) {
+      height: 25em;
+    }
+
+    @media (min-width: 48em) {
+      height: 30em;
+    }
   }
 `;
 

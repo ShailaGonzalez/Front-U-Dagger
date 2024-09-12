@@ -13,6 +13,36 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Ajuste para tamaños de pantalla grandes */
+@media (min-width: 1280px) {
+  body {
+      font-size: 1.2rem;
+  }
+  h1 {
+      font-size: 4rem;
+  }
+}
+
+/* Ajuste para tamaños de pantalla medianos (tabletas) */
+@media (min-width: 768px) and (max-width: 1279px) {
+  body {
+      font-size: 1rem;
+  }
+  h1 {
+      font-size: 3rem;
+  }
+}
+
+/* Ajuste para tamaños de pantalla pequeños (teléfonos móviles) */
+@media (max-width: 767px) {
+  body {
+      font-size: 0.875rem;
+  }
+  h1 {
+      font-size: 2rem;
+  }
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -31,15 +61,14 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
   line-height: 1.1;
 }
 
 button {
-  border-radius: 8px;
+  border-radius: 0.5rem;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: 500;
   font-family: inherit;
   background-color: #1a1a1a;
@@ -56,13 +85,13 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+      color: #213547;
+      background-color: #ffffff;
   }
   a:hover {
-    color: #747bff;
+      color: #747bff;
   }
   button {
-    background-color: #f9f9f9;
+      background-color: #f9f9f9;
   }
 }

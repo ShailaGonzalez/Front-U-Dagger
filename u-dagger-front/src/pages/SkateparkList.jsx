@@ -1,34 +1,62 @@
-// src/pages/SkateparkList.jsx
+
 import React, { useState, useEffect } from 'react';
 import { getSkateparks } from '../services/skateparkService';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const SkateparkListContainer = styled.div`
-  padding: 20px;
+  padding: 2em;
   max-width: 1200px;
   margin: auto;
+  box-sizing: border-box;
 
-  @media (max-width: 768px) {
-    padding: 10px;
+  @media (max-width: 30em) {
+    padding: 1em;
+  }
+
+  @media (min-width: 30em) and (max-width: 48em) {
+    padding: 1.5em;
+  }
+
+  @media (min-width: 48em) {
+    padding: 2em;
   }
 
   ul {
     list-style: none;
     padding: 0;
+
+    @media (max-width: 30em) {
+      padding: 0.5em;
+    }
   }
 
   li {
-    margin: 10px 0;
+    margin: 1em 0;
+
+    @media (max-width: 30em) {
+      font-size: 0.875em;
+      margin: 0.75em 0;
+    }
+
+    @media (min-width: 30em) and (max-width: 48em) {
+      font-size: 1em;
+      margin: 0.75em 0;
+    }
+
+    @media (min-width: 48em) {
+      font-size: 1em;
+      margin: 1em 0;
+    }
   }
 
   a {
     color: #007bff;
     text-decoration: none;
-  }
 
-  a:hover {
-    text-decoration: underline;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 `;
 

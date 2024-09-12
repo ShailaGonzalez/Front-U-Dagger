@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import UsersList from './components/UsersList'; 
 import ProductsList from './components/ProductsList';
@@ -17,24 +17,23 @@ import GlobalStyles from './styles/GlobalStyles';
 function App() {
   return (
     <>
-      <GlobalStyles /> {/* Aplicar estilos globales */}
+      <GlobalStyles />
+      <h1>U!Dagger!</h1> {/* Este h1 es para verificar */}
       <Router>
-        <div>
-          <Navbar />
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/users" component={UsersList} /> {/* Ruta para la gestión de usuarios */}
-            <Route path="/products" component={ProductsList} />
-            <Route path="/products/:id" component={ProductDetail} />
-            <Route path="/skateparks" component={SkateparkList} />
-            <Route path="/skatepark-map" component={SkateparkMap} />
-            <Route path="/login" component={LoginPage} />
-            <Route path="/register" component={RegisterPage} />
-            <Route path="/cart" component={ShoppingCart} />
-            <Route path="/profile" component={UserProfile} />
-            <Route path="/product/:id?" component={ProductManagement} /> {/* Gestión de productos */}
-          </Switch>
-        </div>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/users" element={<UsersList />} />
+          <Route path="/products" element={<ProductsList />} />
+          <Route path="/products/:id" element={<ProductDetail />} />
+          <Route path="/skateparks" element={<SkateparkList />} />
+          <Route path="/skatepark-map" element={<SkateparkMap />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/register" element={<RegisterPage />} />
+          <Route path="/cart" element={<ShoppingCart />} />
+          <Route path="/profile" element={<UserProfile />} />
+          <Route path="/product/:id?" element={<ProductManagement />} />
+        </Routes>
       </Router>
     </>
   );

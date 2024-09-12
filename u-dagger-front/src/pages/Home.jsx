@@ -1,14 +1,22 @@
-// src/pages/Home.jsx
 import React from 'react';
 import styled from 'styled-components';
 
 const HomeContainer = styled.div`
-  padding: 20px;
-  max-width: 1200px;
+  padding: 2em;
+  max-width: 75em;
   margin: auto;
+  box-sizing: border-box;
 
-  @media (max-width: 768px) {
-    padding: 10px;
+  @media (max-width: 30em) {
+    padding: 1em;
+  }
+
+  @media (min-width: 30em) and (max-width: 48em) {
+    padding: 1.5em;
+  }
+
+  @media (min-width: 48em) {
+    padding: 2em;
   }
 `;
 

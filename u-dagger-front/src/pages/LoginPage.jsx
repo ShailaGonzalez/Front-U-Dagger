@@ -8,6 +8,18 @@ const PageContainer = styled.div`
   align-items: center;
   min-height: 100vh;
   background-color: #f0f0f0;
+
+  @media (max-width: 30em) {
+    padding: 1em;
+  }
+
+  @media (min-width: 30em) and (max-width: 48em) {
+    padding: 2em;
+  }
+
+  @media (min-width: 48em) {
+    padding: 3em;
+  }
 `;
 
 const LoginPage = () => {
