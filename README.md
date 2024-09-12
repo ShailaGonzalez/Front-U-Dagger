@@ -1,4 +1,4 @@
-# 🛹💍 Skate Jewelry Store - Frontend (React) 🛍️🛹
+# 🛹💍 U!Dagger - Frotend 🛍️🛹
 
 ## Table of Contents
 - [📝 Project Description](#project-description)
