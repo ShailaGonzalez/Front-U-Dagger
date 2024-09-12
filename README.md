@@ -1,4 +1,4 @@
-# 🛹💍 U!DAGGER - Backend 🛠️🖥️
+# 🛹💍 U!Dagger - Frontend 🛍️🛹
 
 ## Table of Contents
 - [📝 Project Description](#project-description)
@@ -12,30 +12,30 @@
 - [👥 Contributors](#contributors)
 
 ## 📝 Project Description
-The backend of the Skate Jewelry Store application is built using Java and Spring Boot. It manages the application's data and business logic, connecting with a PostgreSQL database. The backend provides APIs for user management, product management, and order processing. It also integrates with pgAdmin for database management and Postman for API testing.
+We have built an eCommerce web application tailored for the skateboarding world, specifically for discovering and purchasing skate-inspired jewelry. Users can create and edit their profiles, manage the products they sell, and buy items from other users. The application also features an option to either have items delivered or picked up at designated skateparks in Barcelona. The frontend is designed using React.js for a dynamic and modern user experience.
 
 ## 💡 Technical Competencies
-- **RESTful API Development**: Provides endpoints for user and product management, order processing, etc.
+- **Dynamic and Adaptable Web Interface**: The application features a responsive, interactive UI for a seamless shopping experience across devices.
 
-- **Database Management**: Utilizes PostgreSQL for data storage, with pgAdmin used for database management.
+- **User Account and Profile Management**: Users can create, update, and manage their profiles.
 
-- **Security**: Implements security measures for user authentication and authorization.
-
-- **Integration**: Integrates with third-party tools like Postman for API testing.
+- **E-commerce Solution**: Supports adding and editing products, along with the ability to purchase items directly through the platform.
 
 ## 🛠️ Technologies
-- **[Java](https://www.java.com/en/)**: Version 17.
+- **[HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)**: Version 1.4802.
 
-- **[Spring Boot](https://spring.io/projects/spring-boot)**: Framework for building the application.
+- **[CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)**: Version 2.34.
 
-- **[PostgreSQL](https://www.postgresql.org/)**: Database system used for data storage.
+- **[JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)**: Version 14.
 
-- **[pgAdmin](https://www.pgadmin.org/)**: Tool for managing PostgreSQL databases.
+- **[React.js](https://reactjs.org/)**
+
+- **[Vite.js](https://vitejs.dev/)**
+
+- **[Styled Components](https://styled-components.com/)**: Used for writing CSS-in-JS for better component styling management.
 
 ## 🧰 Tools
-- **[Postman](https://www.postman.com/)**: Tool for testing and interacting with RESTful APIs.
-
-- **[pgAdmin](https://www.pgadmin.org/)**: Tool for managing PostgreSQL databases.
+- **[Figma](https://www.figma.com/)**: For designing the UI/UX layout of the application.
 
 - **[Visual Studio Code (VSC)](https://code.visualstudio.com/)**: Main IDE used for development.
 
@@ -43,66 +43,71 @@ The backend of the Skate Jewelry Store application is built using Java and Sprin
 
 - **[GitHub](https://github.com/)**: Repository hosting platform for collaboration and version control.
 
+- **[Trello](https://trello.com/)**: Agile task management.
+
 ## ✨ Key Features
-- **REST API Endpoints**: Provides endpoints for creating, reading, updating, and deleting users, products, and orders.
+- **Dynamic Interface**: Users can browse skate jewelry, view product details, and interact with the platform in real-time.
 
-- **Database Integration**: Connects with a PostgreSQL database for persistent data storage.
+- **Profile Management**: Users can create and edit their profiles, including adding/editing the products they are selling.
 
-- **User Authentication**: Manages user login and registration with secure authentication mechanisms.
+- **Shopping Cart**: Includes the ability to add, remove, and adjust product quantities in the cart.
 
-- **Order Processing**: Handles order creation and management, including status updates.
+- **Order Management**: Users can choose to have items delivered or pick them up from a nearby skatepark in Barcelona.
 
-- **API Testing**: Use Postman to test and interact with the API endpoints.
+- **Product Categories**: Navigate between different product types (e.g., rings, necklaces, etc.).
+
+- **Image Change**: Automatically updates product images when users select different variations (e.g., color or size).
+
+- **Subtotal and Total**: Automatically calculates and updates the order total.
+
+- **Social Media Integration**: Users can access social media links through the footer.
 
 ## ⚙️ Installation and Execution
-To set up and run the backend locally, follow these steps:
+To install and run the project locally, follow these steps:
 
 1. Clone the repository:  
-   `git clone https://github.com/ShailaGonzalez/SkateJewelryStoreBackend`
+   `git clone https://github.com/ShailaGonzalez/Front-U-Dagger`
 
 2. Navigate to the project directory:  
-   `cd skate-jewelry-store-backend`
+   `cd front-u-dagger`
 
-3. Configure the database connection:
-   - Create a `application.properties` file in `src/main/resources` with the following content:
-     ```properties
-     spring.datasource.url=jdbc:postgresql://localhost:3001/U!Dagger
-     spring.datasource.username=postgres
-     spring.datasource.password=1980
-     ```
+3. Install dependencies:  
+   `npm install`
 
-4. Build the project:  
-   `./mvnw clean install`
+4. Start the development server:  
+   `npm run dev`
 
-5. Run the application:  
-   `./mvnw spring-boot:run`
-
-The backend server will start, and the API will be available at [http://localhost:3001/](http://localhost:3001/).
+The project will be accessible at [http://localhost:5173/](http://localhost:5173/).
 
 ## 🚀 Project Development
 This project was developed using Agile methodologies, with the following key functionalities:
 
-- **Modular Architecture**: Built using Spring Boot for a modular and scalable application.
+- **Reusable Components**: Built with React's component-based architecture, making the application modular and scalable.
 
-- **Database Integration**: Configured PostgreSQL with Spring Data JPA for ORM.
+- **State Management**: React hooks like `useState` and `useEffect` were used to manage component state.
 
-- **Security**: Implemented security features using Spring Security for authentication and authorization.
+- **Functional Programming**: Implemented ES6 methods such as `map`, `filter`, and `reduce` for data processing and rendering.
 
-- **Testing**: Utilized Postman for testing API endpoints.
+- **Styled Components**: CSS-in-JS was used to create dynamic, scoped component styles without global conflicts.
 
 ## 📚 Useful Resources
-- [Java Documentation](https://docs.oracle.com/en/java/)
+- [React.js Documentation](https://reactjs.org/docs/getting-started.html)
 
-- [Spring Boot Documentation](https://spring.io/projects/spring-boot)
+- [Styled Components Documentation](https://styled-components.com/docs)
 
-- [PostgreSQL Documentation](https://www.postgresql.org/docs/)
+- [Vite.js Documentation](https://vitejs.dev/guide/)
 
-- [pgAdmin Documentation](https://www.pgadmin.org/docs/)
+- [Flexbox CSS Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
-- [Postman Documentation](https://learning.postman.com/docs/)
+- [GitHub Documentation](https://docs.github.com/)
+
+- [React.js Course](https://reactjs.org/community/courses.html)
+
+- [useEffect Hook in React](https://reactjs.org/docs/hooks-effect.html)
 
 ## 👥 Contributors
-- **Shaila González** (Backend Developer): [GitHub Profile](https://github.com/ShailaGonzalez)
+- **Shaila González** (Frontend Developer): [GitHub Profile](https://github.com/ShailaGonzalez)
+
 
 
 
